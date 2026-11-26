@@ -1,0 +1,18 @@
+# Environment variables
+.env
+.env.*
+
+# Python virtual environment
+venv/
+.venv/
+
+# Airflow logs
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# dbt
+target/
+dbt_packages/

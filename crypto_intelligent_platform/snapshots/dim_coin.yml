@@ -1,0 +1,12 @@
+snapshots:
+  - name: snap_coin_history
+    relation: ref('COIN')
+
+
+    config:
+      schema: gold
+      unique_key: COIN_KEY
+      strategy: check
+      check_cols:
+        - COIN_NAME
+        - SYMBOL

@@ -1,0 +1,13 @@
+SELECT 
+   COIN_ID,
+   SYMBOL,
+   COIN_NAME,
+   PRICE_USD,
+   MARKET_CAP_USD,
+   VOLUME_24H_USD,
+   HIGH_24H_USD,
+   LOW_24H_USD,
+   PRICE_CHANGE_24H_PCT,
+   LAST_UPDATED,
+   INGESTED_AT
+FROM {{ source('crypto_Raw','crypto_prices')}}
